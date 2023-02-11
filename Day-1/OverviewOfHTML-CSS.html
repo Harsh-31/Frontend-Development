@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Learning-HTML-CSS</title>
+      <style>
+        /* Simple Selector */
+        /*h1{
+            color: lightblue;
+        }
+
+        p{
+            background-color: lightpink;
+        }
+        
+        #unique{
+            text-decoration: underline;
+        }
+
+        .common{
+            background-color: lightgreen;
+        }*/
+
+        /* Combinator Selector */
+
+        .common p{
+            color: lightcoral;
+        }
+
+        .common > p{
+            background-color: yellow;
+        }
+
+        .common + div{
+            color: red;
+        }
+
+        .common ~ div{
+            background-color: lightgreen;
+        }
+
+        /* Attribute Selector */
+
+        label[for] {
+            color: Red;
+        }
+        label[for="name"] {
+            background-color: rgb(165, 243, 49);
+        }
+        input[type]{
+            background-color: grey;
+        }
+
+      </style>
+    </head>
+    
+    <body>
+
+        <!--Form Tag-->
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name">
+
+            <label for="email">Email Id</label>
+            <input type="text" id="email">
+
+            <label for="password">Password</label>
+            <input type="password" id="pass">
+
+            <label for="Phone">Phone</label>
+            <input type="number" id="phone">
+        </form>
+
+
+        <div class="common common2">
+            <div class="something1">Something1</div>    <!--div.something-->
+            <div class="something2">
+                <p>
+                    lorem ipsum dolor sit
+                </p>
+            </div>      
+            <div class="something3">Hello</div>
+            <p>"Hellooooooo!!!!!1"</p>
+
+        </div>
+        <div class="sib">I am Sibling</div>
+        
+
+        <!--Heading Tag-->
+        <h1>1st Heading</h1>
+        <h2>2nd Heading</h2>
+        <h3>3rd Heading</h3>
+
+        <!---Paragraph Tag-->
+        <p>lorem ipsum dolor sit amet, consectetur adipisicing</p>
+
+        <!--Anchor tag-->
+        <a href="http://www.amazon.com">Go to Amazon</a>
+
+
+        <!--Div Tag-->
+        <div id="unique">
+           <p>Hello!!! this is div tag</p>
+        </div>
+
+
+        <!--Unordered List-->
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+        </ul>
+
+        <!--Ordered List-->
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+        </ol>
+
+        <!--Span Tag-->
+        <span>It is also used for content filling</span>
+
+        <!--Image Tag-->
+        <img src="./sample pic.avif" alt="Image is Loading...">
+
+        
+    </body>
+
+</html>
